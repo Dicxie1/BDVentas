@@ -4,6 +4,8 @@ Proyecto que explica los fundamentos de SQL en MySQL/MariaDB
 SQL (Structured Query Lenguage) es un lenguaje estandar para sistemas gestores de base de datos relacionales SGBD. este lenguaje de base de datos se puede sub dividir en 3: lenguaje de definición de datos, lenguaje de manipulaciòn de datos y el lenguaje de control de acceso a datos.
 ## Lenguaje de definición de datos 
 El **Lenguaje de Definición de Datos** tambien llamado **DDL** por las siglas __Data Definition Language__. Las instrucciones DDL se usan para crear, modificar o borrar objetivo en una base de datos como __tablas, vista, esquemas, dominio, activadores, y procedimientos almacenados__. Las palabras clave en SQL se separan de tres tipos de instrucciones DDL son ```CREATE```, ```ALTER``` y ```DROP```.
+- Creacion de [Base de datos](https://github.com/Dicxie1/BDVentas/edit/main/01%20-%20DDL/01Database.sql)
+- Creación de [Tabla](https://github.com/Dicxie1/BDVentas/edit/main/01%20-%20DDL/02tabla.sql)
 ## Lenguaje de manipulacion de datos 
 El **Lenguaje de Manipulación de Datos** tambien llamado **DML** por las siglas __Data Manipulation Language__.
 las instrucciones DML se usan para __recuperar, agregar, modificar o borrar datos almacenados en los objeto de una base de datos__. La palabra clave asociado con las instrucciones DML son ```SELECT```, ```INSERT```, ```UPDATE``` y ```DELETE```
