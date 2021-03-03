@@ -1,3 +1,4 @@
+USE ventas;
 /*para crear un tablas se utiliza la siguiente sintaxis:
     CREATE TABLE [IF NOT EXIST] tbname(
         definicion..
@@ -23,3 +24,16 @@ CREATE TABLE tb2(
     nombre int,
     apellido char(1)
 );
+/*El siguiente ejemplo se crea un tabla llamada tb3 dentro de la base de datos vetas*/
+CREATE TABLE tb3
+(
+    cantidad unsigned int,
+    precio double(12,2),
+    total double(12,2) DEFAULT 0.0
+);
+/*Para elimianar una tabla se utiliza la setencia DROP TABLE
+  Sintaxis:
+    DROP TABLE tbNombre;
+    Ejemplo: con la siguiente setencia se elimina la tablas tb3
+*/
+DROP TABLE tb3;
