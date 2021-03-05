@@ -13,4 +13,4 @@ las instrucciones DML se usan para _recuperar, agregar, modificar o borrar datos
 El **Lenguaje de control de datos** tambien llamado **DCL** por las siglas _Data Manipulation Language_.
 Las instrucciones DCL _permite controlar quién o qué (un usuario en una base de datos puede ser una persona o un programa de aplicación) tiene acceso a objetos específicos en la base de datos_. Con DCL puede otorgar o restringir el acceso usando las instrucciones ```GRANT``` o ```REVOKE```, los dos comandos principales en DCL.
 ## Esquema de base de datos
-<img scr="DBVentas.png">
+![Alt text](DBVentas.png "Esquema de base de datos ")
