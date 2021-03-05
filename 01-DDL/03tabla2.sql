@@ -44,6 +44,9 @@ CREATE TABLE proveedor (
   (2) ALTER TABLE proveedor
            UNIQUE(colnombre1,... colnombreN)
 */
+ALTER TABLE proveedor 
+  ADD CONSTRAINT pk_producto
+  PRIMARY KEY(codProc);
 
 /*
   La restriccion PRIMARY KEY al igual UNIQUE son restricion que no permite un mismo valor
@@ -67,3 +70,21 @@ CREATE TABLE factura(
 */
 
 /*La restricción FOREING KEY*/
+CREATE TABLE producto_proveedor(
+  codProc CHAR(5),
+  idProveedor INT,
+  CONSTRAINT pk_producto_proveedor
+  PRIMARY KEY(codProc, idProveedor)
+);
+/*definir la column codProc en la tabla producto_proveedor  */
+ALTER TABLE producto_proveedor
+  ADD CONSTRAINT FK_Producto
+  FOREIGN KEY(codProc) REFERENCES producto(codProc);
+/*definir la column idproveedor en la tabla producto como llave primaria */
+ALTER TABLE producto
+  ADD COLUMN idProveedor int not null;
+/*definir la columna idproveedor de la tabla producto como llave foranea*/
+ALTER TABLE producto
+  ADD CONSTRAINT fk_producto_proveedor
+  FOREIGN KEY(idproveedor) REFERENCES proveedor(idproveedor);
+
